@@ -2,53 +2,29 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Mis Redes - New1store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mis Redes Sociales</title>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background-image: url('fondo2.jpg');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       color: white;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-      padding: 20px;
-      min-height: 100vh;
-    }
-
-    .container {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 50px 80px;
-      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 4px 30px rgba(0,0,0,0.7);
-    }
-
-    h1 {
-      font-size: 3.2rem; /* Más grande */
-      margin-bottom: 40px;
+      padding: 50px;
     }
 
     .btn {
       background-color: transparent;
-      border: 2.5px solid white;
+      border: 2px solid white;
       color: white;
       display: inline-block;
-      margin: 15px 25px;
-      padding: 20px 50px; /* Más grande */
+      margin: 12px 20px;
+      padding: 20px 50px;
       font-weight: bold;
-      font-size: 24px; /* Más grande */
+      font-size: 22px;
       border-radius: 40px;
       text-decoration: none;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
@@ -61,40 +37,25 @@
       transform: scale(1.05);
     }
 
-    .instagram {
-      border-color: #C13584;
-      color: #C13584;
-    }
-    .instagram:hover {
-      background-color: rgba(193, 53, 132, 0.3);
+    /* Botón específico de TikTok */
+    .btn-tiktok {
+      background-color: #FF0050; /* color rojo vibrante para TikTok */
+      border: 2px solid #FF0050;
       color: white;
     }
 
-    .whatsapp {
-      border-color: #25D366;
-      color: #25D366;
-    }
-    .whatsapp:hover {
-      background-color: rgba(37, 211, 102, 0.3);
-      color: white;
-    }
-
-    .tiktok {
-      border-color: #000000;
-      color: #000000;
-    }
-    .tiktok:hover {
-      background-color: rgba(0, 0, 0, 0.3);
-      color: white;
+    .btn-tiktok:hover {
+      background-color: #e60045;
+      border-color: #e60045;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Síguenos en nuestras redes</h1>
-    <a href="https://www.instagram.com/new.one_shop/" target="_blank" class="btn instagram">Instagram</a>
-    <a href="https://api.whatsapp.com/qr/3GPZFD5XB4CNF1?autoload=1&app_absent=0" target="_blank" class="btn whatsapp">WhatsApp</a>
-    <a href="https://www.tiktok.com/@new_one.shoes?_t=ZN-8xEZSlfFdmY&_r=1" target="_blank" class="btn tiktok">TikTok</a>
-  </div>
+  <h1>Síguenos en nuestras redes</h1>
+  
+  <a href="https://www.facebook.com/" target="_blank" class="btn">Facebook</a>
+  <a href="https://www.instagram.com/" target="_blank" class="btn">Instagram</a>
+  <a href="https://twitter.com/" target="_blank" class="btn">Twitter</a>
+  <a href="https://www.tiktok.com/" target="_blank" class="btn btn-tiktok">TikTok</a>
 </body>
 </html>
