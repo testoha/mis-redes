@@ -2,69 +2,99 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mis Redes</title>
+  <title>Mis Redes - New1store</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background-image: url("fondo2.jpg");
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background-image: url('fondo2.jpg');
       background-size: cover;
       background-position: center;
-      font-family: Arial, sans-serif;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       color: white;
-      text-align: center;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      padding: 20px;
+      min-height: 100vh;
     }
+
     .container {
-      background-color: rgba(0, 0, 0, 0.5);
-      max-width: 400px;
-      margin: 80px auto;
-      padding: 40px 20px;
-      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 50px 80px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.7);
     }
+
     h1 {
+      font-size: 3.2rem; /* Más grande */
       margin-bottom: 40px;
-      font-size: 2.2rem;
     }
+
     .btn {
       background-color: transparent;
-      border: 2px solid white;
+      border: 2.5px solid white;
       color: white;
-      display: block;
-      margin: 12px auto;
-      padding: 20px 50px;
+      display: inline-block;
+      margin: 15px 25px;
+      padding: 20px 50px; /* Más grande */
       font-weight: bold;
-      font-size: 22px;
+      font-size: 24px; /* Más grande */
       border-radius: 40px;
       text-decoration: none;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
       transition: background-color 0.3s ease, transform 0.2s ease;
       backdrop-filter: blur(5px);
-      width: fit-content;
     }
+
     .btn:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: scale(1.05);
     }
 
-    /* Solo el botón TikTok con fondo rojo oscuro */
-    .btn.tiktok {
-      background-color: #e1306c; /* rojo oscuro TikTok */
-      border-color: #e1306c;
+    .instagram {
+      border-color: #C13584;
+      color: #C13584;
+    }
+    .instagram:hover {
+      background-color: rgba(193, 53, 132, 0.3);
       color: white;
     }
-    .btn.tiktok:hover {
-      background-color: #b12757;
-      border-color: #b12757;
+
+    .whatsapp {
+      border-color: #25D366;
+      color: #25D366;
+    }
+    .whatsapp:hover {
+      background-color: rgba(37, 211, 102, 0.3);
+      color: white;
+    }
+
+    .tiktok {
+      border-color: #000000;
+      color: #000000;
+    }
+    .tiktok:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Síguenos en nuestras redes</h1>
-    <a href="https://www.tiktok.com/@tuusuario" target="_blank" class="btn tiktok">TikTok</a>
-    <a href="https://www.instagram.com/tuusuario" target="_blank" class="btn">Instagram</a>
-    <a href="https://wa.me/tu-numero" target="_blank" class="btn">WhatsApp</a>
+    <a href="https://www.instagram.com/new.one_shop/" target="_blank" class="btn instagram">Instagram</a>
+    <a href="https://api.whatsapp.com/qr/3GPZFD5XB4CNF1?autoload=1&app_absent=0" target="_blank" class="btn whatsapp">WhatsApp</a>
+    <a href="https://www.tiktok.com/@new_one.shoes?_t=ZN-8xEZSlfFdmY&_r=1" target="_blank" class="btn tiktok">TikTok</a>
   </div>
 </body>
 </html>
