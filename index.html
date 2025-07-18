@@ -3,25 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mis Redes Sociales</title>
+  <title>Mis Redes</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('fondo2.jpg');
+      padding: 0;
+      background-image: url("fondo2.jpg");
       background-size: cover;
       background-position: center;
+      font-family: Arial, sans-serif;
       color: white;
       text-align: center;
-      padding: 50px;
     }
-
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 40px 20px;
+      border-radius: 15px;
+    }
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+    }
     .btn {
       background-color: transparent;
       border: 2px solid white;
       color: white;
-      display: inline-block;
-      margin: 12px 20px;
+      display: block;
+      margin: 12px auto;
       padding: 20px 50px;
       font-weight: bold;
       font-size: 22px;
@@ -30,32 +40,31 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
       transition: background-color 0.3s ease, transform 0.2s ease;
       backdrop-filter: blur(5px);
+      width: fit-content;
     }
-
     .btn:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: scale(1.05);
     }
 
-    /* Botón específico de TikTok */
-    .btn-tiktok {
-      background-color: #FF0050; /* color rojo vibrante para TikTok */
-      border: 2px solid #FF0050;
+    /* Solo el botón TikTok con fondo rojo oscuro */
+    .btn.tiktok {
+      background-color: #e1306c; /* rojo oscuro TikTok */
+      border-color: #e1306c;
       color: white;
     }
-
-    .btn-tiktok:hover {
-      background-color: #e60045;
-      border-color: #e60045;
+    .btn.tiktok:hover {
+      background-color: #b12757;
+      border-color: #b12757;
     }
   </style>
 </head>
 <body>
-  <h1>Síguenos en nuestras redes</h1>
-  
-  <a href="https://www.facebook.com/" target="_blank" class="btn">Facebook</a>
-  <a href="https://www.instagram.com/" target="_blank" class="btn">Instagram</a>
-  <a href="https://twitter.com/" target="_blank" class="btn">Twitter</a>
-  <a href="https://www.tiktok.com/" target="_blank" class="btn btn-tiktok">TikTok</a>
+  <div class="container">
+    <h1>Síguenos en nuestras redes</h1>
+    <a href="https://www.tiktok.com/@tuusuario" target="_blank" class="btn tiktok">TikTok</a>
+    <a href="https://www.instagram.com/tuusuario" target="_blank" class="btn">Instagram</a>
+    <a href="https://wa.me/tu-numero" target="_blank" class="btn">WhatsApp</a>
+  </div>
 </body>
 </html>
